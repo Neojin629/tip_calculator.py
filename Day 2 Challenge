@@ -12,6 +12,6 @@ total_plus_tip = float(total) + tip_percentage
 
 tip_split = total_plus_tip/int(people_split)
 
-rounded_tip_split = round(tip_split,2)
+rounded_tip_split = "{:.2f}".format(tip_split)
 
 print(f"Each person should pay: ${rounded_tip_split} ")
